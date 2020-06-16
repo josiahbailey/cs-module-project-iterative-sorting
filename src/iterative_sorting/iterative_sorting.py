@@ -1,11 +1,11 @@
 # TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
-    for i in range(0, len(arr) - 1):
-        cur_index = i
+    for x in range(0, len(arr) - 1):
+        cur_index = x
         smallest_index = cur_index
-        for x in range(cur_index + 1, len(arr)):
-            if arr[x] < arr[smallest_index]:
-                smallest_index = x
+        for z in range(cur_index + 1, len(arr)):
+            if arr[z] < arr[smallest_index]:
+                smallest_index = z
         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
     return arr
 
